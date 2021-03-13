@@ -1,0 +1,100 @@
+/**
+ * 1. Avoid the IE 10-11 `min-height` bug.
+ * 2. Set `flex-shrink` to `0` to prevent some browsers from
+ *    letting these items shrink to smaller than their content's default
+ *    minimum size. See http://bit.ly/1Mn35US for details.
+ * 3. Use `%` instead of `vh` since `vh` is buggy in older mobile Safari.
+ */
+ @font-face{
+  font-family: "Amalfi Coast Regular";
+  src:  url("../fonts/Amalfi-Coast.ttf") format("truetype");
+ }
+
+ @font-face{
+  font-family: "Bellefair-Regular";
+  src: url("../fonts/Bellefair-Regular.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Heatwood Regular";
+  src: url("../fonts/Heatwood-GOKPO.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Hasta Free Regular";
+  src: url("../fonts/Hasta-Free.ttf") format("truetype");
+}@font-face{
+  font-family: "Juliette Regular";
+  src: url("../fonts/Juliette-p7oZv.ttf") format("truetype");
+}@font-face{
+  font-family: "FancyText Regular";
+  src: url("../fonts/Fancytext-0Wqd.ttf") format("truetype");
+}
+
+ .HolyGrail {
+  display: flex;
+  flex-direction: column;
+}
+
+.HolyGrail-header,
+.HolyGrail-footer {
+  flex: none; /* 2 */
+}
+
+.container {
+  min-height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cursiveName {
+  color: white;
+  font-family:  "Amalfi Coast Regular";
+  font-size: 3em; 
+  font-size-adjust: 0.5em;
+  line-height: 140%;
+  text-align: center
+}
+
+
+.job {
+  color: white;
+  font-family:"Montserrat Classic ", sans-serif;
+  font-size:  1 em;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-align: center
+}
+
+.thirdLine{
+  color: bisque;
+  text-align: center;
+
+
+  font-family: "Bellefair-Regular", sans-serif;
+  text-align:justify;
+
+
+}
+.bg-dark {
+  background-color:#2125299f!important
+}
+.newShit{
+  background-image: url("../images/bg1.png"); /* The image used */
+  background-position: bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover ; /* Resize the background image to cover the entire container */
+}
+
+.Adithya{
+  font-family: "FancyText Regular", sans-serif;
+  text-align:right;
+  color: antiquewhite;
+font-weight: 300;
+}
+
+.Studio{
+  font-family: "Juliette Regular", sans-serif;
+  text-align:left;
+  color: darkblue;
+}
